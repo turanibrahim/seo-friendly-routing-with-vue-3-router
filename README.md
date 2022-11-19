@@ -4,7 +4,7 @@
 
 https://seo-friendly-routing-with-vue-3-router.ibrahimturan.com/
 
-With this project aims to improve SEO performance with using localized route paths. With this project, you will have;
+With this project aims to improve SEO score with using localized route paths. With this project, you will have;
 
 - English as default language (without lang prefix on the URL)
 - Different url paths for every page you have based on locale
