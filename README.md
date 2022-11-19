@@ -1,5 +1,9 @@
 # SEO Friendly Routing With Vue 3 Router
 
+**Live Demo**
+
+https://seo-friendly-routing-with-vue-3-router.ibrahimturan.com/
+
 With this project aims to improve SEO performance with using localized route paths. With this project, you will have;
 
 - English as default language (without lang prefix on the URL)
