@@ -1,5 +1,5 @@
 <script setup>
-import { watchEffect } from 'vue';
+import { watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import CustomLink from '@/components/CustomLink.vue';
 import { useRoute, useRouter } from 'vue-router';
@@ -23,18 +23,12 @@ const setLocale = (newLocale) => {
   updateRoutePath(newLocale);
 };
 
-watchEffect(() => {
-  const { name } = route;
+watch(() => route.name, (newValue, oldValue) => {
+  if (newValue !== oldValue) {
+    const [localeValue] = newValue.split('-');
 
-  if (name) {
-    const [localeValue] = name.split('-');
-
-    if (!import.meta.env.SSR) {
-      const html = document.documentElement;
-      html.setAttribute('lang', localeValue);
-    }
-
-    locale.value = localeValue;
+    const html = document.documentElement;
+    html.setAttribute('lang', localeValue);
 
     setLocale(localeValue);
   }
