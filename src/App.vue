@@ -78,6 +78,10 @@ watch(() => route.name, (newValue, oldValue) => {
   flex-wrap: wrap;
 
   .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
     font-size: 1.5rem;
   }
 
