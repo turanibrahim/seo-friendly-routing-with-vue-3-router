@@ -2,6 +2,11 @@
 	"general": {
 		"chooseLanguage": "Choose Language"
 	},
+	"pages": {
+		"about": "\uD83C\uDFE2 About Us",
+		"home": "\uD83C\uDFE0 Home",
+		"contact": "\uD83D\uDCEE Contact Us"
+	},
 	"home": {
 		"title": "This is Home page"
 	},

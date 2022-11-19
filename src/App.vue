@@ -1,16 +1,43 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
+import CustomLink from '@/components/CustomLink.vue';
+import { useRoute, useRouter } from 'vue-router';
 
 const { locale } = useI18n();
+const router = useRouter();
+const route = useRoute();
 
+const updateRoutePath = (newLocale) => {
+  const { name } = route;
+  const nameWithoutLangPrefix = name.split('-').pop();
+
+  router.replace({
+    ...route,
+    name: `${newLocale}-${nameWithoutLangPrefix}`,
+  });
+};
 const setLocale = (newLocale) => {
   locale.value = newLocale;
+
+  updateRoutePath(newLocale);
 };
 </script>
 
 <template>
   <div class="header">
-    <div class="menu" />
+    <div class="menu">
+      <custom-link :to="{ name: 'HomePage' }">
+        {{ $t('pages.home') }} |
+      </custom-link>
+
+      <custom-link :to="{ name: 'AboutPage' }">
+        {{ $t('pages.about') }} |
+      </custom-link>
+
+      <custom-link :to="{ name: 'ContactUsPage' }">
+        {{ $t('pages.contact') }} |
+      </custom-link>
+    </div>
 
     <div class="language-selection">
       <div class="language-selection__title">
@@ -32,6 +59,16 @@ const setLocale = (newLocale) => {
 
 <style lang="scss">
 .header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .menu {
+    font-size: 1.5rem;
+  }
+
   .language-selection {
     &__title {
       font-weight: bold;

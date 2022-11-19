@@ -2,6 +2,11 @@
 	"general": {
 		"chooseLanguage": "Dil Seciniz"
 	},
+	"pages": {
+		"about": "\uD83C\uDFE2 Hakkimizda",
+		"home": "\uD83C\uDFE0 Anasayfa",
+		"contact": "\uD83D\uDCEE Bize Ulasin"
+	},
 	"home": {
 		"title": "Bu sayfa Anasayfa"
 	},
