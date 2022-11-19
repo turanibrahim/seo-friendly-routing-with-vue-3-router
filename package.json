@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-vue": "^9.7.0",
     "eslint-plugin-vuejs-accessibility": "^2.0.0",
+    "sass": "^1.56.1",
     "vite": "^3.2.3"
   }
 }
