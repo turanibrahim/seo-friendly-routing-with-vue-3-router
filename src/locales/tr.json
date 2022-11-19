@@ -1,4 +1,7 @@
 {
+	"general": {
+		"chooseLanguage": "Dil Seciniz"
+	},
 	"home": {
 		"title": "Bu sayfa Anasayfa"
 	},

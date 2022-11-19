@@ -1,4 +1,7 @@
 {
+	"general": {
+		"chooseLanguage": "Choose Language"
+	},
 	"home": {
 		"title": "This is Home page"
 	},
