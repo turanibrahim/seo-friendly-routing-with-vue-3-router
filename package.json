@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "vue": "^3.2.41",
-    "vue-i18n": "^9.2.2"
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@intlify/vite-plugin-vue-i18n": "^6.0.3",
     "@vitejs/plugin-vue": "^3.2.0",
     "eslint": "^8.28.0",
     "eslint-config-airbnb-base": "^15.0.0",

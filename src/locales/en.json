@@ -1,5 +1,11 @@
 {
 	"home": {
-		"title": "This is home page"
+		"title": "This is Home page"
+	},
+	"aboutUs": {
+		"title": "This is About Us page"
+	},
+	"contactUs": {
+		"title": "This is Contact Us page"
 	}
 }

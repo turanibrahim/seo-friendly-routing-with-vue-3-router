@@ -1,5 +1,11 @@
 {
 	"home": {
 		"title": "Bu sayfa Anasayfa"
+	},
+	"aboutUs": {
+		"title": "Bu sayfa Hakkimizda Sayfasi"
+	},
+	"contactUs": {
+		"title": "Bu sayfa Iletisim Sayfasi"
 	}
 }
