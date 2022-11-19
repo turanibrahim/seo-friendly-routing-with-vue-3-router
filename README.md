@@ -1,7 +1,32 @@
-# Vue 3 + Vite
+# SEO Friendly Routing With Vue 3 Router
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+With this project aims to improve SEO performance with using localized route paths. With this project, you will have;
 
-## Recommended IDE Setup
+- English as default language (without lang prefix on the URL)
+- Different url paths for every page you have based on locale
+- Locale based dynamic links (When user change locale link paths will update automatically)
+- Have language prefix on URL if users use different language
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+**Requirements**
+
+* Vite 3
+* Vue 3
+* Vue Router
+* Vue i18n
+* SASS
+* Eslint
+
+**Installation**
+
+```bash
+npm install
+```
+
+## Rules
+
+* Always define route with object `path`. This object should contain locales as key and localized path as value
+* Always use `CustomLink` component as a `RouterLink`
+* Always use `name` when you define `to` prop to `CustomLink` component.
+* If you use `redirect` inside route, you have to use name of redirected route.
+* If you need current to create to object from name always use `useCustomLink` composable.
+* If you add new locale to project, don't forget to add new path property to routes.
